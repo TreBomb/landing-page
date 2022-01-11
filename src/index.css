@@ -1,4 +1,19 @@
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
 body {
+  background-color: #1a1a1a;
+  color: #1d1d1d;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +25,138 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ----------------------- */
+
+/* -- TEXT -- */
+
+.txt-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #bb86fc;
+}
+
+.txt-sub {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ad6dfb;
+}
+
+.txt-body {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* -- NAV -- */
+
+.nav {
+  background-color: #bb86fc;
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-txt:hover {
+  color: #ffffff;
+  transition: ease-in-out 0.4s;
+}
+
+.left {
+  margin-right: auto;
+  padding-left: 0.5em;
+}
+
+.right {
+  margin-left: auto;
+  padding-right: 0.5em;
+}
+
+/* -- HOME -- */
+
+.home {
+  margin-top: 8vh;
+  width: 100%;
+}
+
+/* -- HERO -- */
+
+.hero {
+  height: 92vh;
+  width: 100%;
+}
+
+.hero-svg {
+  background-color: #bb86fc;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-svg-txt {
+  font-size: 1em;
+  font-weight: bold;
+  fill: #1d1d1d;
+  text-align: left;
+}
+
+.hero-svg-arrow {
+  font-size: 0.3em;
+  font-weight: 200;
+  fill: #1d1d1d;
+  text-align: center;
+}
+
+/* -- CONTENT -- */
+
+.single-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  width: 80%;
+  height: 50vh;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.content-txt {
+  text-align: left;
+  color: #bb86fc;
+  width: 58%;
+  height: 100%;
+  margin: 0;
+  margin-right: 2%;
+}
+
+.content-img {
+  width: 38%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  margin-left: 2%;
+  filter: invert(1);
 }
