@@ -28,7 +28,7 @@ export default function Model({ ...props }) {
         scale={22.61}
         recieveShadow
       >
-        <meshStandardMaterial color="#89969c" roughness={1} />
+        <meshStandardMaterial color="#788287" roughness={1} />
       </mesh>
       <meshStandardMaterial color="#ff0000" roughness={1} />
       <mesh
