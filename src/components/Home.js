@@ -6,6 +6,9 @@ const Home = () => {
         <div className='home'>
             <Hero />
             <SingleContent type={'all'} />
+            <SingleContent type={'all'} />
+            <SingleContent type={'all'} />
+            <SingleContent type={'all'} />
         </div>
       )
   }

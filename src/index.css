@@ -15,7 +15,7 @@ body {
   background-color: #1a1a1a;
   color: #1d1d1d;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Light', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -104,19 +104,36 @@ hr {
 .hero {
   height: 92vh;
   width: 100%;
+  background-color: #bb86fc;
+}
+
+.hero-msg {
+  margin-top: 0;
+  font-size: 8vw;
+  font-weight: bold;
+  color: #1d1d1d;
+  text-align: center;
 }
 
 .hero-svg {
-  background-color: #bb86fc;
   width: 100%;
   height: 100%;
+}
+
+g {
+  height: 100%;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  fill: #1d1d1d;
+  text-align: center;
 }
 
 .hero-svg-txt {
   font-size: 1em;
   font-weight: bold;
   fill: #1d1d1d;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-svg-arrow {
