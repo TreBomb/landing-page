@@ -1,3 +1,4 @@
+import World from './World'
 const Hero = () => {
     return (
         <div className='hero'>
@@ -9,7 +10,8 @@ const Hero = () => {
                 </g>
                 <text className='hero-svg-arrow' x='5' y='98'>v</text>
             </svg> */}
-            <h1 className='hero-msg'>welcome to trest.in</h1>
+            <World />
+            {/* <h1 className='hero-msg'>welcome to trest.in</h1> */}
         </div>
       )
   }

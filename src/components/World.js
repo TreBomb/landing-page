@@ -4,14 +4,17 @@ import * as THREE from 'three'
 // import * as dat from 'lil-gui'
 import { TWEEN } from 'three/examples/jsm/libs/tween.module.min'
 import { Canvas, useFrame, extend, useThree } from '@react-three/fiber'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { useGLTF } from '@react-three/drei/core/useGLTF'
 
 // Models
-import Clouds from '../models/Clouds'
-import Earth from '../models/Earth'
+import Office from '../models/Office'
+import Lights from '../models/Lights'
+import Mouse from '../models/Mouse'
 
-extend({ OrbitControls })
+function Rig() {
+  const { camera, mouse } = useThree()
+  const vec = new THREE.Vector3()
+  return useFrame(() => camera.position.lerp(vec.set(mouse.x * 2, mouse.y * 1, camera.position.z), 0.02)) // .lerp(vec.set(mouse.x * 2, mouse.y * 1, camera.position.z), 0.02)
+}
 
 // let isTouchDevice = 'ontouchstart' in document.documentElement
 // let control
@@ -23,53 +26,27 @@ extend({ OrbitControls })
 //   control = {MIDDLE: THREE.MOUSE.ROTATE}
 // }
 
-const CameraControls = () => {
-    const {
-      camera,
-      gl: { domElement },
-    } = useThree()
-    const controls = useRef()
-    useFrame((state) => controls.current.update())
-    return (
-        <orbitControls
-          ref={controls}
-          args={[camera, domElement]}
-          enableDamping = {true}
-          mouseButtons = {{
-            MIDDLE: THREE.MOUSE.ROTATE
-          }}
-        />
-      )
-  }
-
 const Scene = () => {
     const [pos, setPos] = useState()
-    const cloudsRef = React.createRef()
-
-    // useEffect(() => {
-    //     Movement(pos)
-    // }, [pos])
+    const officeRef = React.createRef()
 
 
     return (
-        <Canvas style={{ background: '#7cbae6' }}>
-            <ambientLight intensity={0.9} />
-            <spotLight intensity={0.9} angle={.4} penumbra={1} position={[100, 15, 100]} castShadow />
+        <Canvas
+        style={{ background: '#7cbae6' }}
+        colorManagement
+        shadowMap
+        >
+            <ambientLight intensity={0.2} />
+            <directionalLight castShadow position={[2.5, 12, 12]} intensity={3} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
+            <pointLight position={[20, 20, 20]} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
+            <pointLight position={[-20, -20, -20]} intensity={3} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
+            <Office rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <Lights rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <Mouse rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
             <Suspense fallback={null}>
-            <Clouds
-            // ref={this.cloudsRef}
-            onClick={(e) => { console.log(e) }}
-            castShadow
-            />
-            {/* <Earth
-            position={[-90, 5.4, 50]}
-            scale={[3, 3, 3]}
-            castShadow
-            // onClick={(e) => Movement.js(e.point, cloudsRef)}
-            onClick={(e) => { console.log(e.point) }}
-            /> */}
             </Suspense>
-            <CameraControls />
+            <Rig />
         </Canvas>
     )
 }
