@@ -181,7 +181,7 @@ g {
 
 /* -- SMALL SCREENS -- */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   .single-content {
     display: flex;
     flex-direction: column;
