@@ -56,6 +56,7 @@ hr {
   width: 100%;
   border-top: 1px solid #ffffff;
   margin-bottom: 0.5rem;
+  margin-top: auto;
 }
 
 /* -- NAV -- */
@@ -152,7 +153,7 @@ g {
   align-items: center;
   background-color: #2a2a2a;
   width: 80%;
-  height: 50vh;
+  overflow: auto;
   margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
@@ -176,4 +177,42 @@ g {
   margin: 0;
   margin-left: 2%;
   filter: invert(1);
+}
+
+/* -- SMALL SCREENS -- */
+
+@media screen and (max-width: 1024px) {
+  .single-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    width: 80%;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .content-txt {
+    font-size: 8em;
+    text-align: left;
+    color: #bb86fc;
+    width: 90%;
+    height: 85%;
+    margin: 0;
+    margin-right: 2%;
+  }
+  
+  .content-img {
+    width: 90%;
+    height: 10%;
+    max-height: 10%;
+    margin: 0;
+    margin-left: 2%;
+    filter: invert(1);
+  }
 }

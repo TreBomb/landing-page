@@ -33,7 +33,7 @@ const Scene = () => {
 
     return (
         <Canvas
-        style={{ background: '#7cbae6' }}
+        style={{ background: '#ffffff' }} //#bb86fc
         colorManagement
         shadowMap
         >
