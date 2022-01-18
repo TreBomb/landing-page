@@ -7,9 +7,9 @@ const Home = () => {
         <div className='home'>
             <Hero />
             <SingleContent type={'all'} />
-            <SingleContent type={'all'} />
-            <SingleContent type={'all'} />
-            <SingleContent type={'all'} />
+            <SingleContent type={'languages'} />
+            <SingleContent type={'projects'} />
+            <div className='spacer' />
         </div>
       )
   }

@@ -54,9 +54,26 @@ code {
 
 hr {
   width: 100%;
-  border-top: 1px solid #ffffff;
+  border: 1px solid #ffffff;
   margin-bottom: 0.5rem;
   margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.project-desc {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
 /* -- NAV -- */
@@ -176,7 +193,71 @@ g {
   object-fit: contain;
   margin: 0;
   margin-left: 2%;
-  filter: invert(1);
+}
+
+.content-ul {
+  justify-content: center;
+  align-items: center;
+  column-count: 3;
+  column-fill: balance;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.content-li {
+  column-span: none;
+  margin-top: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 3rem;
+  row-gap: 1rem;
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+}
+
+.project-img {
+  width: 50%;
+  object-fit: contain;
+  margin: 0;
+  margin-left: 2%;
+}
+
+.content-project {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  column-span:all;
+  align-items: center;
+  background-color: #1d1d1d;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.content-project:hover {
+  background-color: #0a0a0a;
+  transition: ease-in-out 0.4s;
+}
+
+.content-full {
+  color: #bb86fc;
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  margin-right: 2%;
+}
+
+/* -- SPACER -- */
+
+.spacer {
+  height: 5rem;
+  width: 0;
 }
 
 /* -- SMALL SCREENS -- */
@@ -213,6 +294,54 @@ g {
     max-height: 10%;
     margin: 0;
     margin-left: 2%;
-    filter: invert(1);
+  }
+
+  .content-ul {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    column-count: 2;
+    column-fill: balance;
+    column-width: 40%;
+    list-style-type: none;
+    width: 90%;
+    padding: 5%;
+    padding-left: 0;
+  }
+  
+  .content-li {
+    column-span: none;
+    margin-top: 0;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .project-img {
+    width: 50%;
+    object-fit: contain;
+    margin: 0;
+    margin-left: 2%;
+  }
+  
+  .content-project {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    column-span:all;
+    align-items: center;
+    background-color: #1d1d1d;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
   }
 }
