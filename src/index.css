@@ -246,6 +246,7 @@ g {
 }
 
 .content-full {
+  text-align: left;
   color: #bb86fc;
   width: 90%;
   height: 100%;
