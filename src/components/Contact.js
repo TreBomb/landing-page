@@ -7,12 +7,14 @@ const Contact = ({ enabled, setEnabled }) => {
                 <div className='contact-bg'>
                     <div className='contact-container'>
                         <button className='contact-close' onClick={() => setEnabled(false)}>x</button>
-                        <h1 className='contact-txt'>Send me a message!</h1>
+                        <h3 className='contact-txt'>Send me a message!</h3>
+                        <p className='contact-desc'>Fill out this form and I will get an email with your contact info and your message. I'm available for hire!</p>
                         <form className='contact-form'>
-                            <input className='contact-input' type='text' placeholder='name' />
-                            <input className='contact-input' type='text' placeholder='email' />
-                            <textarea className='contact-input' placeholder='message' />
-                            <button className='contact-btn'>send</button>
+                            <input className='contact-input' type='text' placeholder='Name' />
+                            <input className='contact-input' type='text' placeholder='Email' />
+                            <input className='contact-input' type='text' placeholder='Phone' />
+                            <textarea className='contact-input' placeholder='Message' />
+                            <button className='contact-btn'>Send</button>
                         </form>
                     </div>
                 </div>
