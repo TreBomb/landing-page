@@ -48,8 +48,7 @@ const Contact = ({ enabled, setEnabled }) => {
                         name='Name'
                         placeholder='Name'
                         {...register('Name', { required: 'Please enter your name', pattern: {
-                            value: 20,
-                            message: 'Please enter a name with less than 20 characters'
+                            value: 20
                         } })}
                         />
                         {errors.Name && errors.Name.message}
@@ -58,8 +57,7 @@ const Contact = ({ enabled, setEnabled }) => {
                         type='text'
                         placeholder='Email'
                         {...register('Email', { required: 'Please enter an email', pattern: {
-                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                            message: 'invalid email address'
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
                         } })}
                         />
                         {errors.Email && errors.Email.message}
