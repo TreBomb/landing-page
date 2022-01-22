@@ -498,4 +498,17 @@ textarea.contact-input {
     padding-top: 0.2rem;
   }
 
+  .contact-btn {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 0;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #bb86fc;
+    color: #1d1d1d;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
 }

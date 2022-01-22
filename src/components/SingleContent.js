@@ -69,7 +69,7 @@ const SingleContent = ({ type }) => {
             <div className='single-content'>
             <div className='content-full'>
                 <h1 className='txt-title'>Projects</h1>
-                <h2 className='txt-sub'>Look what I've done</h2>
+                <h2 className='txt-sub'>View what I've done</h2>
                 <hr />
                 <div className="project-grid">
                     <a href='https://fit-spot.herokuapp.com/' className='content-project'>
