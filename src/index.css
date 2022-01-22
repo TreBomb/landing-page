@@ -469,4 +469,33 @@ textarea.contact-input {
     height: 90%;
     border-radius: 0.5rem;
   }
+
+  .contact-txt {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #ffffff;
+  }
+
+  .contact-desc {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    color: #ffffff;
+  }
+
+  .contact-input {
+    width: 70%;
+    height: 50px;
+    margin-bottom: 0.8rem;
+    margin-top: 0.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #1d1d1d;
+    color: #bb86fc;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+  }
+
 }

@@ -4,7 +4,7 @@ const SingleContent = ({ type }) => {
             <div className='single-content'>
                 <div className='content-txt'>
                     <h1 className='txt-title'>About Me</h1>
-                    <h2 className='txt-sub'>Who I am</h2>
+                    <a href='static/Trestin_Ishak_Resume.pdf' download='Trestin Ishak Resume'><h2 className='txt-sub'>Click here for my resume</h2></a>
                     <hr />
                     <p className='txt-body'>
                         Hello, I'm Trestin! I'm a software engineer based in Austin, TX.

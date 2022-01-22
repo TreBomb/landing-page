@@ -41,6 +41,7 @@ const Contact = ({ enabled, setEnabled }) => {
                     <button className='contact-close' onClick={() => setEnabled(false)}>x</button>
                     <h3 className='contact-txt'>Send me a message!</h3>
                     <p className='contact-desc'>Fill out this form and I will get an email with your contact info and your message. I'm available for hire!</p>
+                    <a href='static/Trestin_Ishak_Resume.pdf' download='Trestin Ishak Resume'><h2 className='contact-desc'>Click here for my resume</h2></a>
                     <form className='contact-form' onSubmit={handleSubmit(onSubmit)} >
                         <input
                         className='contact-input'
