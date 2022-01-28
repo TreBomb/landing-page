@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import emailjs from 'emailjs-com'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 
 const Contact = ({ enabled, setEnabled }) => {
@@ -21,17 +20,6 @@ const Contact = ({ enabled, setEnabled }) => {
         })
             .catch(err => console.error('Error:', err))
     }
-
-    function sendEmail(e) {
-        e.preventDefault()
-    
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-          .then((result) => {
-              console.log(result.text)
-          }, (error) => {
-              console.log(error.text)
-          })
-      }
 
     if (enabled === true) {
         console.log('contact')
