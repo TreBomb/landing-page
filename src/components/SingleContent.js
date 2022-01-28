@@ -7,12 +7,12 @@ const SingleContent = ({ type }) => {
                     <a href='static/Trestin_Ishak_Resume.pdf' download='Trestin Ishak Resume'><h2 className='txt-sub'>Click here for my resume</h2></a>
                     <hr />
                     <p className='txt-body'>
-                        Hello, I'm Trestin! I'm a software engineer based in Austin, TX.
-                        I have a passion for building things that make people's lives better.
-                        I love to create and design high quality websites and applications.
-                        I'm always looking to learn new things and grow as a developer.
-                        I aspire to make something great that I can be proud of.
-                        I'm currently looking for a position in the Austin area.
+                        Hello, I'm Trestin! I'm a software engineer based in Austin, TX
+                        with a passion for building things that make people's lives better.
+                        I love to create and design high quality websites and applications
+                        that allow me to learn new things and grow as a developer.
+                        I aspire to make something great that I can be proud of
+                        and call my own. I'm currently looking for a position in the Austin area.
                     </p>
                 </div>
                 <img className='content-img' src='/static/images/Me_BLANK.png' />
