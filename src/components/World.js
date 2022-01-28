@@ -7,6 +7,10 @@ import { Canvas, useFrame, extend, useThree } from '@react-three/fiber'
 
 // Models
 import Office from '../models/Office'
+import PC from '../models/PC'
+import Fan1 from '../models/Fan1'
+import Fan2 from '../models/Fan2'
+import Parts from '../models/Parts'
 import Lights from '../models/Lights'
 import Mouse from '../models/Mouse'
 
@@ -42,6 +46,10 @@ const Scene = () => {
             <pointLight position={[20, 20, 20]} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
             <pointLight position={[-20, -20, -20]} intensity={3} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
             <Office rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <PC rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <Fan1 rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <Fan2 rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <Parts rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
             <Lights rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
             <Mouse rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
             <Suspense fallback={null}>

@@ -14,12 +14,12 @@ export default function Model({ ...props }) {
         <mesh geometry={nodes.Cube007.geometry} material={nodes.Cube007.material} castShadow recieveShadow />
         <mesh geometry={nodes.Cube007_1.geometry} material={nodes.Cube007_1.material} castShadow recieveShadow />
       </group>
-      <group position={[0.59, -1.46, -2.4]} scale={[1, 1.07, 0.49]}>
+      {/* <group position={[0.59, -1.46, -2.4]} scale={[1, 1.07, 0.49]}>
         <mesh geometry={nodes.Cube014.geometry} material={nodes.Cube014.material} castShadow recieveShadow />
         <mesh geometry={nodes.Cube014_1.geometry} material={nodes.Cube014_1.material} castShadow recieveShadow />
         <mesh geometry={nodes.Cube014_2.geometry} material={materials['Neon Green']} castShadow recieveShadow />
         <mesh geometry={nodes.Cube014_3.geometry} material={materials.Black2} castShadow recieveShadow />
-      </group>
+      </group> */}
       <mesh
         geometry={nodes.Wall.geometry}
         // material={materials.Wall}
