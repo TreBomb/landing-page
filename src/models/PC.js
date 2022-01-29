@@ -11,6 +11,7 @@ export default function Model({ ...props }) {
         <mesh geometry={nodes.Cube014_1.geometry} material={materials.Black} />
         <mesh geometry={nodes.Cube014_2.geometry} material={materials['Neon Green']} />
         <mesh geometry={nodes.Cube014_3.geometry} material={materials.Black2} />
+        <mesh geometry={nodes.Cube014_4.geometry} material={materials.Gray} />
       </group>
     </group>
   )

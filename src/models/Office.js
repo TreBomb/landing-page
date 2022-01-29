@@ -21,7 +21,7 @@ export default function Model({ ...props }) {
         <mesh geometry={nodes.Cube014_3.geometry} material={materials.Black2} castShadow recieveShadow />
       </group> */}
       <mesh
-        geometry={nodes.Wall.geometry}
+        // geometry={nodes.Wall.geometry}
         // material={materials.Wall}
         position={[-1.65, -3.15, 0]}
         rotation={[0, 0, -Math.PI / 2]}

@@ -13,6 +13,8 @@ import Fan2 from '../models/Fan2'
 import Parts from '../models/Parts'
 import Lights from '../models/Lights'
 import Mouse from '../models/Mouse'
+import Posters from '../models/Posters'
+import Wall from '../models/Wall'
 
 function Rig() {
   const { camera, mouse } = useThree()
@@ -37,12 +39,12 @@ const Scene = () => {
 
     return (
         <Canvas
-        style={{ background: '#ffffff' }} //#bb86fc
+        style={{ background: '#87CEEB' }} //#bb86fc
         colorManagement
         shadowMap
         >
             <ambientLight intensity={0.2} />
-            <directionalLight castShadow position={[2.5, 12, 12]} intensity={3} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
+            <directionalLight castShadow position={[2.5, 12, 12]} intensity={3} shadow-mapSize-height={512} shadow-mapSize-width={512} />
             <pointLight position={[20, 20, 20]} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
             <pointLight position={[-20, -20, -20]} intensity={3} castShadow shadow-mapSize-height={512} shadow-mapSize-width={512} />
             <Office rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
@@ -52,6 +54,8 @@ const Scene = () => {
             <Parts rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
             <Lights rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
             <Mouse rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <Posters rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
+            <Wall rotation={[0, -1.5708, 0]} position={[1.45, 0.6, 0.1]} />
             <Suspense fallback={null}>
             </Suspense>
             <Rig />
