@@ -82,7 +82,13 @@ const SingleContent = ({ type }) => {
                         <img className="project-img" src='/static/images/zombie.png' alt='Zombie Slayer Icon' />
                         <p className="project-title">Zombie Slayer</p>
                         <hr />
-                        <p className="project-desc">Virtual Reality app made in Unity published through Steamworks</p>
+                        <p className="project-desc">Virtual Reality app made in Unity published through Steamworks.</p>
+                    </a>
+                    <a href='https://github.com/TreBomb' className='content-project'>
+                        <img className="project-img" src='/static/images/github.png' alt='Git Hub' />
+                        <p className="project-title">GitHub</p>
+                        <hr />
+                        <p className="project-desc">View my personal GitHub account.</p>
                     </a>
                 </div>
             </div>
